@@ -11,3 +11,16 @@
             window.addEventListener('load', function () {
                 loader.style.display = 'none';
             });
+
+// Fade-In-Up effect
+$(window).scroll(function() {
+ $('.card-link').each(function() {
+  var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+  var bottom_of_window = $(window).scrollTop() + $(window).height();
+  if (bottom_of_window > bottom_of_object) {
+    $(this).addClass('animate');
+    $(this).removeClass('card-link');
+  }
+ });
+});
+
