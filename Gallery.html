@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
 
     <!-- Main JS -->
-    <script src="JS/main.js"></script>
+    <script type="module" src="JS/main.js"></script>
 
 <body>
 <!-- Nav-bar begin -->
@@ -412,6 +412,19 @@
     </div>
 </section>
 <!-- Gallery-body end -->
+
+<!-- Uplaod images begin-->
+<div class="gallery-post">
+    <form id="post-form">
+        <h3>Post an Image</h3>
+        <input type="file" class="form-control" id="image" accept="images/">
+        <div class="text-center">
+            <button type="button" class="btn btn-success" onclick="upload()">Upload</button>
+        </div>
+    </form>
+</div>
+
+<!-- Uplaod images end-->
 
 <!-- Footer begin -->
 <footer class="footer pt-5 pb-5 text-center">
