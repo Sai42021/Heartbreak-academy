@@ -310,8 +310,9 @@ body {
     font-family: 'League Spartan', sans-serif;
     display: grid;
     place-items: center;
-    background: #E8BCB9;
-    background: linear-gradient(to right, #F39F5A, #FFA586);
+
+    height: fit-content;
+    background: linear-gradient(55deg, #AE445A 0%, #F39F5A 51%, #E8BCB9 85%);
 }
 
 .tales-section h4 {
