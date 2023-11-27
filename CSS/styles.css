@@ -195,6 +195,14 @@ body {
     color: #111
 }
 
+.Gallery-body {
+    cursor: url('../images/Custom-Cursor.png'), auto;
+}
+
+.photo {
+    cursor: url('../images/Custom-Cursor.png'), auto;
+}
+
 .photo img {
     object-fit: cover;
     box-shadow: 10px 15px 25px 0 rgba(0, 0, 0, .2);
@@ -290,6 +298,14 @@ body {
 /*Gallery section end*/
 
 /*Tales Section begin*/
+.card-link {
+    cursor: url('../images/Custom-Cursor.png'), auto;
+}
+
+.tales-section {
+    cursor: url('../images/Custom-Cursor.png'), auto;
+}
+
 .tales-section {
     font-family: 'League Spartan', sans-serif;
     display: grid;
