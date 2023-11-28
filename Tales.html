@@ -18,6 +18,7 @@
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
     
     <!-- Main JS -->
     <script src="JS/main.js"></script>
@@ -39,8 +40,7 @@
                 <li class="nav-item active stories">
                     <a class="nav-link" href="Tales.html">Tales<i class="fas fa-heart-broken"></i></a>
                 </li>
-                <li> <a href="#"><img id="plus-icon" style="height: 35px; width: 35px;" src="images/plus.png"
-                            alt="plus icon"></a></li>
+                <li> <a href="#" data-bs-toggle="modal" data-bs-target="#upload-options"><i class="fas fa-circle-plus" style="color: black; font-size:x-large;"></i></a></li>
             </ul>
             <form class="form-inline my-2 my-lg-0 d-flex justify-content-between" style="margin-top: -15px;">
                 <input class="form-control mr-sm-2 w-100" type="search" placeholder="Send us feedback..."
@@ -126,6 +126,29 @@
         </div>
     </section>
     <!-- Tales-section end-->
+
+    <!-- Upload Options Modal Begin-->
+    <div class="modal" id="upload-options" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Create!</h5>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-class col-md-4">
+                        <a href="#" type="button" class="btn btn-primary ">Upload Image</a>
+                    </div>
+                    <div class="modal-class col-md-4">
+                        <a href="#" type="button" class="btn btn-primary">Write us a Tale</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Upload Options Modal End-->
 
 <footer class="footer pt-5 pb-5 text-center">
 

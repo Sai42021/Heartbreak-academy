@@ -461,3 +461,21 @@ h5 {
     transform: translateY(0);
 }
 /*Tales Section end*/
+
+/*Uplaod Options Modal Begin*/
+.modal .btn {
+    border: none;
+    background: #F39F5A;
+    color: #fff;
+    font-weight: 400;
+    font-size: large;
+    margin-left: 10px;
+    padding-left: 10px;
+    align-self: center;
+    align-items: center;
+}
+
+.modal-class {
+    padding-top: 5px;
+}
+/*Uplaod Options Modal End*/
