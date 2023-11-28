@@ -12,7 +12,7 @@
 
         // Function to handle scroll events
         function handleScroll() {
-            const cardLinks = document.querySelectorAll('.card-link');
+            const cardLinks = document.querySelectorAll('.card-link', '.photo');
 
             cardLinks.forEach(cardLink => {
                 if (isInViewport(cardLink)) {

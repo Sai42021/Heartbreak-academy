@@ -246,6 +246,29 @@ body {
     margin-top: 0;
 }
 
+.photo {
+    opacity: 0;
+    transform: translateY(-100%);
+    animation: fadeInUp 1s forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.photo.fade-in-up {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .card__thumb {
     flex-shrink: 0;
     width: 50px;
