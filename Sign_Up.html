@@ -8,7 +8,7 @@
     <!-- Favicon -->
     <link rel="shortcut icon" type="_image/png_" href="images/Favicon-removebg-preview.png">
 
-    <title>Heartbreak | Login</title>
+    <title>Heartbreak | Sign Up</title>
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -25,7 +25,15 @@
     <script type="module" src="JS/main.js"></script>
 </head>
 
-<body>
+<body style="display: flex;
+padding-top: 100px;
+margin-top: 100px;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(55deg, #AE445A 0%, #F39F5A 51%, #E8BCB9 85%);">
+
     <!-- Nav-bar begin -->
     <nav class="navbar navbar-expand-lg fixed-top shadow">
         <a class="navbar-brand" href="Gallery.html"><img src="images/Heartbreak_Acdemy_-_Logo-removebg-preview.png"
@@ -36,14 +44,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
-                <li class="nav-item active gallery">
+                <li class="nav-item">
                     <a class="nav-link" href="Gallery.html">Gallery</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="Tales.html">Tales<i class="fas fa-heart-broken"></i></a>
-                </li>
-                <li> <a data-bs-toggle="modal" data-bs-target="#upload-options" href="#"><i class="fas fa-circle-plus"
-                            id="#modal" style="color: black; font-size:x-large;"></i></a></li>
             </ul>
             <form class="form-inline my-2 my-lg-0 d-flex justify-content-between">
                 <input class="form-control mr-sm-2 w-100" type="search" placeholder="Send us feedback..."
@@ -55,26 +60,45 @@
     </nav>
     <!-- Nav-bar end -->
 
-    <!-- Footer begin -->
-    <footer class="footer pt-5 pb-5 text-center">
-
+    <!-- Form body begin-->
+    <section class="form-body">
         <div class="container">
-            <!--
-                  All the links in the footer should remain intact.
-                  You may remove the links only if you donate:
-                  https://www.wowthemes.net/freebies-license/
-                -->
-            <p>© <span class="credits font-weight-bold">
-                    <a target="_blank" class="text-dark" href="#"><u>Heartbreak Academy</u> by Abisai Sem & Frans
-                        Nekongo</a>
-                </span>
-            </p>
-
-
+            <div class="title">
+                Sign Up
+            </div>
+            <form action="#">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Full Name</span>
+                        <input type="text" placeholder="Enter your name" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Username</span>
+                        <input type="text" placeholder="Enter your username" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Email</span>
+                        <input type="text" placeholder="Enter your email" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Password</span>
+                        <input type="text" placeholder="Enter your password" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Confirm Password</span>
+                        <input type="text" placeholder="confirm your password" required>
+                    </div>
+                </div>
+                <div class="button">
+                    <input type="submit" value="Register">
+                </div>
+                <div>
+                    <a href="Login.html">Already have an account?</a>
+                </div>
+            </form>
         </div>
-
-    </footer>
-    <!-- Footer end -->
+    </section>
+    <!-- Form body begin-->
 
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
